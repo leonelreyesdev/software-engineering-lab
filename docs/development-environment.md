@@ -10,6 +10,7 @@ This document describes the development environment used for the Software Engine
 
 * Visual Studio Code
 * Architecture: x64
+* Workspace configuration and daily workflow: [VS Code workflow and recovery](vscode-workflow.md)
 
 ## Version Control
 
@@ -27,7 +28,9 @@ This document describes the development environment used for the Software Engine
 
 ### Python
 
-* Python: 3.14.7
+* VS Code workspace interpreter: Python 3.14.7
+* Outside a virtual environment, `python` on PATH still reports 3.14.0; `py -3.14` selects 3.14.7.
+* Existing Python installations and PATH are preserved.
 * Python environments: project-specific `.venv`
 * Python launcher: `py`
 
