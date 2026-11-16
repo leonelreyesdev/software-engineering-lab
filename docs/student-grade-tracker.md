@@ -62,6 +62,8 @@ npm test
 - Average below 70: FAIL.
 - Empty grade list: NO GRADES.
 - An empty grade list returns `null`, preventing division by zero.
+- Non-finite grades or averages (`NaN`, `Infinity`)
+  are rejected with a `RangeError`.
 
 ## Verification
 

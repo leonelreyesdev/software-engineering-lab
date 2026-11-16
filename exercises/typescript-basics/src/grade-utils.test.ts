@@ -29,3 +29,17 @@ describe("getStatus", () => {
         expect(getStatus(null)).toBe("NO GRADES");
     });
 });
+
+describe("invalid numeric inputs", () => {
+    it("rejects NaN grades", () => {
+        expect(() => calculateAverage([90, NaN])).toThrow(RangeError);
+    });
+
+    it("rejects Infinity grades", () => {
+        expect(() => calculateAverage([90, Infinity])).toThrow(RangeError);
+    });
+
+    it("rejects invalid averages", () => {
+        expect(() => getStatus(NaN)).toThrow(RangeError);
+    });
+});
