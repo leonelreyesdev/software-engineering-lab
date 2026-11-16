@@ -10,3 +10,4 @@ This directory contains technical documentation related to the Software Engineer
 - Architecture and design notes
 - Technical decisions
 - Learning documentation
+- [Student Grade Tracker](student-grade-tracker.md)
